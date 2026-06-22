@@ -1,4 +1,4 @@
-﻿document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
     // ==================== 图片数据 ====================
     // 人文类 (slides 1-4 + slide 16)
     const humanitiesImages = [
