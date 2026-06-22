@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+function initGallery() {
     // ==================== 图片数据 ====================
     // 人文类 (slides 1-4 + slide 16)
     const humanitiesImages = [
@@ -144,4 +144,11 @@ document.addEventListener("DOMContentLoaded", () => {
             galleryObserver.observe(item);
         });
     }, 100);
-});
+}
+
+if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initGallery);
+} else {
+    initGallery();
+}
+
