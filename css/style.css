@@ -109,7 +109,7 @@ ul {
     height: 100vh;
     min-height: 600px;
     background: url("../273.JPG") center / cover no-repeat;
-    background-attachment: fixed;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -210,6 +210,7 @@ ul {
 }
 
 .gallery-item {
+    -webkit-tap-highlight-color: transparent;
     position: relative;
     aspect-ratio: 4 / 3;
     overflow: hidden;
@@ -219,6 +220,7 @@ ul {
 }
 
 .gallery-item img {
+    -webkit-transform: translateZ(0);
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -457,6 +459,7 @@ ul {
     .nav-links a {
         font-size: 0.82rem;
     }
+    .nav-logo { font-size: 1rem; }
 
     .nav-logo {
         font-size: 1.1rem;
@@ -465,6 +468,8 @@ ul {
     .section {
         padding: 60px 20px;
     }
+    .section-header { margin-bottom: 36px; }
+    .section-header h2 { font-size: 1.5rem; }
 
     .section-dark {
         padding: 60px 20px;
@@ -481,6 +486,13 @@ ul {
 
     .hero-title {
         padding: 0 20px;
+    }
+
+    /* 手机端 Hero 背景修正 */
+    .hero {
+        height: 70vh;
+        min-height: 400px;
+        background-attachment: scroll;
     }
 
     .music-player {
@@ -516,5 +528,6 @@ ul {
     .hero-title {
         font-size: 1.5rem;
     }
+    .hero { height: 60vh; min-height: 320px; }
 }
 
